@@ -11,7 +11,7 @@ function renderTableItem(arrProduct) {
               <div class="product-info">
                 <a class="product-name">${item.name}</a>
                 <p class="product-description">${item.shortDescription}</p>
-                <a href="../detail.html" class="text-danger">Buy now</a>  
+                <a href="/detail.html?id=${item.id}" class="text-danger">Buy now</a>  
                 <div class="product-price mt-2">${item.price}$</div>
                 </div>
               </div>
