@@ -225,7 +225,8 @@ body {
 .footer .footer_top .container .item .title a p:hover {
   color: rgba(0, 0, 0, 0);
 }
-.footer .footer_top .container .item .title1, .footer .footer_top .container .item .title2 {
+.footer .footer_top .container .item .title1,
+.footer .footer_top .container .item .title2 {
   border-right: 1px solid #CCCCCC;
 }
 .footer .footer_top .container .item .title3 a:last-of-type {
@@ -255,7 +256,8 @@ body {
 .footer .footer_bottom .container .item .title a:last-of-type {
   color: #FC0303;
 }
-.footer .footer_bottom .container .item .title1, .footer .footer_bottom .container .item .title2 {
+.footer .footer_bottom .container .item .title1,
+.footer .footer_bottom .container .item .title2 {
   border-right: 1px solid #CCCCCC;
 }
 

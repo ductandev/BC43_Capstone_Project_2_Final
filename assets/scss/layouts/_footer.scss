@@ -1,75 +1,76 @@
-.footer{
-  .footer_top{
-      background: $bg-c4-secondary;
+.footer {
+  .footer_top {
+    background: $bg-c4-secondary;
 
-      .container{
-          // padding-left: 150px;
-          .item{
-              .title{
-                  h3{
-                      @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
-                  }
-                  a{
-                      display: block;
-                      text-decoration: none;
-                      @extend .text-lorem ;
-                      font-size: 13px;
-                      p{
-                          display: inline-block;
-                          margin-bottom: 0.5rem;
-                          @extend .hover-gradient;
-                          &:hover{
-                              color:rgba(0,0,0,0);
-                          }
-                      }
-                  }
-
-              }
-              .title1,.title2{
-                  border-right: 1px solid $bg-c0-secondary;
-              }
-              .title3{
-                  a:last-of-type{
-                      color: $text-c0-danger;
-                  }
-              }
+    .container {
+      // padding-left: 150px;
+      .item {
+        .title {
+          h3 {
+            @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
           }
+          a {
+            display: block;
+            text-decoration: none;
+            @extend .text-lorem;
+            font-size: 13px;
+            p {
+              display: inline-block;
+              margin-bottom: 0.5rem;
+              @extend .hover-gradient;
+              &:hover {
+                color: rgba(0, 0, 0, 0);
+              }
+            }
+          }
+        }
+        .title1,
+        .title2 {
+          border-right: 1px solid $bg-c0-secondary;
+        }
+        .title3 {
+          a:last-of-type {
+            color: $text-c0-danger;
+          }
+        }
       }
+    }
   }
-  
-  .footer_bottom{
-      background: $bg-c5-secondary;
 
-      .container{
-          // padding-left: 100px;
-          .item{
-              .title{
-                  h3{
-                      @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
-                  }
-                  a{
-                      display: block;
-                      text-decoration: none;
-                      @extend .text-lorem ;
-                      font-size: 13px;
+  .footer_bottom {
+    background: $bg-c5-secondary;
 
-                      p{
-                          display: inline-block;
-                          margin-bottom: 0.5rem;
-                          @extend .hover-gradient;
-                          &:hover{
-                              color:rgba(0,0,0,0);
-                          }
-                      }
-                  }
-                  a:last-of-type{
-                      color: $text-c0-danger;
-                  }
-              }
-              .title1,.title2{
-                  border-right: 1px solid $bg-c0-secondary;
-              }
+    .container {
+      // padding-left: 100px;
+      .item {
+        .title {
+          h3 {
+            @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
           }
+          a {
+            display: block;
+            text-decoration: none;
+            @extend .text-lorem;
+            font-size: 13px;
+
+            p {
+              display: inline-block;
+              margin-bottom: 0.5rem;
+              @extend .hover-gradient;
+              &:hover {
+                color: rgba(0, 0, 0, 0);
+              }
+            }
+          }
+          a:last-of-type {
+            color: $text-c0-danger;
+          }
+        }
+        .title1,
+        .title2 {
+          border-right: 1px solid $bg-c0-secondary;
+        }
       }
+    }
   }
 }

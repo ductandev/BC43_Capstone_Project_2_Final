@@ -8,8 +8,16 @@ body {
   font-size: 14px;
   line-height: 1.15;
 }
+@import "../base/base";
+@import "../components/component.scss";
+@import "../themes/variable";
+
+@import "../layouts/header";
+@import "../layouts/menu";
+@import "../layouts/footer";
+
 //text
-$text-primary-c0: #2a73dd;
+// $text-primary-c0: #2a73dd;
 $text-dark-c0: #000;
 $text-dark-c1: #656774;
 $text-light: #fff;
@@ -40,8 +48,7 @@ $btn-bg: #f8b653;
   padding: $p;
   cursor: pointer;
 }
-@import "../layouts/header";
-@import "../layouts/menu";
+
 a {
   text-decoration: none;
   color: black;

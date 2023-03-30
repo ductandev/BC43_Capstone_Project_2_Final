@@ -6,32 +6,33 @@
   height: 60px;
 
   .container {
-      .header_left {
-          .logo {
-              img {}
-          }
+    .header_left {
+      .logo {
+        img {
+        }
+      }
+    }
+
+    .header_right {
+      a {
+        &:hover {
+          color: $text-c0-violet;
+        }
+      }
+      .charge {
+        text-decoration: none;
+
+        img {
+        }
       }
 
-      .header_right {
-          a{
-              &:hover{
-                  color:$text-c0-violet;
-              }
-          }
-          .charge {
-              text-decoration: none;
-
-              img {}
-          }
-
-          .login {
-              @extend .text-header;
-          }
-
-          .register {
-              @extend .text-header;
-          }
-
+      .login {
+        @extend .text-header;
       }
+
+      .register {
+        @extend .text-header;
+      }
+    }
   }
 }
