@@ -1,0 +1,43 @@
+.footer {
+  .container-fluid {
+    .row {
+      .top {
+        .container {
+          .list-item {
+            .item {
+              border-right: 2px solid #1c6ea4;
+              h3 {
+                font-size: $fs-2xl;
+                font-weight: $fw-bold;
+              }
+              a {
+                p {
+                  font-size: $fs-base;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bot {
+        background-color: $bg-footer-bot;
+        .container {
+          .list-item {
+            .item {
+              border-right: 2px solid #1c6ea4;
+              h3 {
+                font-size: $fs-2xl;
+                font-weight: $fw-bold;
+              }
+              a {
+                p {
+                  font-size: $fs-base;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
