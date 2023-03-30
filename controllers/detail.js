@@ -20,9 +20,9 @@ function renderTableProductDetail(arrProductsDetail){
                     <h3 class="mt-2">Available size</h3>
                     ${sizeButton}
                     <p class="price">${arrProductsDetail.price}$</p>
-                    <button class="btn-add-remove rounded" id="btn-plush" onclick=addAmount()>+</button>
-                    <p class="amount d-inline-block text-center rounded" id="amount">01</p>
-                    <button class="btn-add-remove rounded" id="btn-minus" onclick=minusAmount()>-</button>
+                    <button class="btn-add-remove rounded-start" id="btn-plush" onclick=addAmount()>+</button>
+                    <p class="amount d-inline-block text-center" id="amount">01</p>
+                    <button class="btn-add-remove rounded-end" id="btn-minus" onclick=minusAmount()>-</button>
                     <buton class="btn-add-to-cart rounded" id="btn-add-to-cart">Add to cart</button>
 
                 </div>

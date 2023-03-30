@@ -28,7 +28,7 @@
     background: linear-gradient(180deg, $bg-c0-puple 0%, $bg-c1-puple 99.48%);
 }
 .text-amount{
-    @include text($fw-normal, $fs-3xl, $lh-lg, $text-c0-dark);
+    @include text($fw-semibold, 25px, $lh-lg, $text-c0-dark);
 }
 .text-add-to-card{
     @include text(500, 24px, $lh-md, $text-c4-secondary);
