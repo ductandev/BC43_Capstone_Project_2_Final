@@ -73,7 +73,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #FFF8F8;
-  background: linear-gradient(270deg, rgba(62, 32, 248, 0.9019607843) 5.14%, #D017EE 89.71%);
+  background-image: linear-gradient(to right, #ff8800 0%, #d017ee 51%, #5136f8 100%);
 }
 
 .text-realate-product {
@@ -99,7 +99,7 @@
 }
 
 .text-buy-now {
-  font-weight: 200;
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #000;
