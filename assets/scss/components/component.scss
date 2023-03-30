@@ -1,0 +1,159 @@
+@import '../themes/variable';
+
+
+.button-primary {
+    @include button($fs-base,$fw-light,$text-c0-light,$bg-c0-primary,none, 5px,15px, $text-c0-light,$bg-c0-dark);
+}
+
+
+.text-header {
+    @include text($fw-light, $fs-base, $lh-sm, $text-c0-light);
+    text-decoration: none;
+    margin-left: 15px;
+}
+.text-menu {
+    @include text($fw-normal, $fs-2xl, $lh-base, $text-c0-dark);
+}
+.text-product-name {
+    @include text($fw-light, $fs-3xl, $lh-lg, $text-c0-dark);
+}
+.text-lorem {
+    @include text($fw-normal, $fs-base, $lh-sm, $text-c0-dark);
+}
+.text-available-size {
+    @include text(500, 24px, $lh-md, $text-c3-success);
+}
+.text-choose-size {
+    @include text($fw-semibold, 24px, $lh-md, $text-c1-dark);
+}
+.text-price-top{
+    @include text($fw-semibold, $fs-3xl, $lh-lg, $text-c0-danger);
+}
+.text-plush-minus{
+    @include text($fw-normal, $fs-3xl, $lh-lg, $text-c0-light);
+    background: linear-gradient(180deg, $bg-c0-puple 0%, $bg-c1-puple 99.48%);
+}
+.text-amount{
+    @include text($fw-normal, $fs-3xl, $lh-lg, $text-c0-dark);
+}
+.text-add-to-card{
+    @include text(500, 24px, $lh-md, $text-c4-secondary);
+    background: linear-gradient(270deg, $bg-c1-primary 5.14%, $bg-c0-violet 89.71%);
+}
+.text-realate-product {
+    @include text($fw-normal, $fs-4xl, $lh-xl, $text-c0-dark);
+    text-align: center
+}
+.text-name-product {
+    @include text($fw-light, $fs-2xl , $lh-md, $text-c0-dark);
+}
+.text-short-descript {
+    @include text($fw-light, $fs-xl, $lh-base, $text-c2-secondary);
+}
+.text-buy-now {
+    @include text(200, 24px, $lh-md, $text-c0-dark);
+}
+.text-price-bottom{
+    @include text($fw-semibold, 24px, $lh-md, $text-c0-dark);
+}
+
+
+
+
+
+
+
+
+.text-gradient {
+    color: $text-c0-violet;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      $text-c0-violet 0%,
+      $text-c1-violet 50%,
+      $text-c2-violet 1000%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+    // background: linear-gradient(
+    //     to right, 
+    //     #00e6d8 0, 
+    //     #c15bff 25%, 
+    //     #ff00a6 50%, 
+    //     #ff2c1c 75%, 
+    //     #ffb800 100%
+    // );
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+
+
+.hover-gradient{
+    background: linear-gradient(to right, $text-c0-violet, $text-c1-violet, $text-c2-violet);
+    background-size: 300% 300%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    transition: color .2s ease-in-out;
+}
+
+
+// .text-title-shadow {
+//     @extend .text-title;
+//     -webkit-box-shadow: 1px 9px 5px 0px rgba(42, 115, 221, 0.59);
+//     box-shadow: 1px 9px 5px 0px rgba(42, 115, 221, 0.59);
+// }
+
+// .icon-primary {
+//     color: blue;
+// }
+// .icon-danger {
+//     color: red;
+// }
+
+//Vòng lặp tăng dần 
+
+// .fs-1 {
+//     font-size: 5px;
+// }
+// .fs-2 {
+//     font-size: 10px;
+// }
+// .fs-3 {
+//     font-size: 15px;
+// }
+
+// Cho chạy từ 1-> 5
+@for $i from 1 to 6 {
+    .fs-#{$i} {
+        font-size: $i * 5px;
+    }
+}
+
+$arrFZ: ("0":1rem,"1":1.25rem,"2":1.5rem);
+
+@each $key,$value in $arrFZ {
+    .fz-#{$key}{
+        font-size: $value;
+    }
+}
+
+$arrColor : ("primary":blue,"success":green,"warning":rgb(236, 124, 18),"dark":$text-c0-dark);
+
+@each $key,$value in $arrColor {
+    .bg-#{$key} {
+        background: $value;
+    }
+    .text-#{$key} {
+        color:$value;
+    }
+    .border-#{$key} {
+        border-color: $value;
+    }
+}
+
+.shadow {
+    -webkit-box-shadow: 0px -1px 6px 5px #E5EDFF; 
+    box-shadow: 0px -1px 6px 5px #E5EDFF;
+}
