@@ -1,5 +1,13 @@
 //text
-$text-primary-c0: #2a73dd;
+@import "../base/base";
+@import "../components/component.scss";
+@import "../themes/variable";
+
+@import "../layouts/header";
+@import "../layouts/menu";
+@import "../layouts/footer";
+
+// $text-primary-c0: #2a73dd;
 $text-dark-c0: #000;
 $text-dark-c1: #656774;
 $text-light: #fff;
@@ -38,9 +46,7 @@ $blue: #0eb7da;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-@import "../layouts/header";
-@import "../layouts/menu";
-@import "../layouts/footer";
+
 $btn-bg: #f8b653;
 @mixin btn($bg, $cl, $bd, $br, $fs, $p, $c-hover, $bg-hover) {
   background: $bg;

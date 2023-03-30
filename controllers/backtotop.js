@@ -13,4 +13,3 @@ function toggleTopButton() {
     document.getElementById("back-to-up").classList.add("d-none");
   }
 }
-//

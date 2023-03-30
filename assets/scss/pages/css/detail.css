@@ -212,7 +212,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 29px;
-  color: #1E1D1D;
+  color: #1e1d1d;
 }
 .footer .footer_top .container .item .title a {
   display: block;
@@ -226,11 +226,12 @@ body {
 .footer .footer_top .container .item .title a p:hover {
   color: rgba(0, 0, 0, 0);
 }
-.footer .footer_top .container .item .title1, .footer .footer_top .container .item .title2 {
-  border-right: 1px solid #CCCCCC;
+.footer .footer_top .container .item .title1,
+.footer .footer_top .container .item .title2 {
+  border-right: 1px solid #cccccc;
 }
 .footer .footer_top .container .item .title3 a:last-of-type {
-  color: #FC0303;
+  color: #fc0303;
 }
 .footer .footer_bottom {
   background: #ececec;
@@ -239,7 +240,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 29px;
-  color: #1E1D1D;
+  color: #1e1d1d;
 }
 .footer .footer_bottom .container .item .title a {
   display: block;
@@ -254,10 +255,11 @@ body {
   color: rgba(0, 0, 0, 0);
 }
 .footer .footer_bottom .container .item .title a:last-of-type {
-  color: #FC0303;
+  color: #fc0303;
 }
-.footer .footer_bottom .container .item .title1, .footer .footer_bottom .container .item .title2 {
-  border-right: 1px solid #CCCCCC;
+.footer .footer_bottom .container .item .title1,
+.footer .footer_bottom .container .item .title2 {
+  border-right: 1px solid #cccccc;
 }
 
 .productDetail .container .row .content_left {
@@ -277,12 +279,8 @@ body {
   margin-top: 58px;
   width: 334px;
   height: 355px;
-<<<<<<< HEAD
   background: #f8f8f8;
-=======
-  background: #F8F8F8;
   border: 6px solid linear-gradient(to right, #00e6d8 0, #c15bff 25%, #ff00a6 50%, #ff2c1c 75%, #ffb800 100%);
->>>>>>> e9c4d4d18d28c5ac8110322643e34d4896e1bdc8
 }
 .productDetail .container .row .content_right {
   padding-right: 57px;
@@ -393,101 +391,6 @@ body {
   margin-bottom: 0;
   background: #dedddc;
 }
-<<<<<<< HEAD
-.footer .footer_top {
-  background: #fafafa;
-}
-.footer .footer_top .container .item .title h3 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 29px;
-  color: #1e1d1d;
-}
-.footer .footer_top .container .item .title a {
-  display: block;
-  text-decoration: none;
-  font-size: 13px;
-}
-.footer .footer_top .container .item .title a p {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-.footer .footer_top .container .item .title a p:hover {
-  color: rgba(0, 0, 0, 0);
-}
-.footer .footer_top .container .item .title1, .footer .footer_top .container .item .title2 {
-  border-right: 1px solid #cccccc;
-}
-.footer .footer_top .container .item .title3 a:last-of-type {
-  color: #fc0303;
-}
-.footer .footer_bottom {
-  background: #ececec;
-}
-.footer .footer_bottom .container .item .title h3 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 29px;
-  color: #1e1d1d;
-}
-.footer .footer_bottom .container .item .title a {
-  display: block;
-  text-decoration: none;
-  font-size: 13px;
-}
-.footer .footer_bottom .container .item .title a p {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-.footer .footer_bottom .container .item .title a p:hover {
-  color: rgba(0, 0, 0, 0);
-}
-.footer .footer_bottom .container .item .title a:last-of-type {
-  color: #fc0303;
-}
-.footer .footer_bottom .container .item .title1, .footer .footer_bottom .container .item .title2 {
-  border-right: 1px solid #cccccc;
-}
-
-/* Back To Top */
-.backToTop {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  visibility: hidden;
-  opacity: 0;
-}
-@media screen and (max-width: 768px) {
-  .backToTop {
-    right: 10px;
-    bottom: 20px;
-  }
-}
-
-/* back-to-top button visible */
-.cd-top--is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.backToTop i {
-  color: #d017ee;
-  border: 3px solid #d017ee;
-  width: 60px;
-  height: 60px;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 60px;
-  border-radius: 50%;
-}
-@media screen and (max-width: 768px) {
-  .backToTop i {
-    width: 45px;
-    height: 45px;
-    line-height: 40px;
-  }
-}
-
 @-webkit-keyframes rainbow {
   0% {
     background-position: left;
@@ -499,9 +402,6 @@ body {
     background-position: left;
   }
 }
-
-=======
->>>>>>> e9c4d4d18d28c5ac8110322643e34d4896e1bdc8
 @keyframes rainbow {
   0% {
     background-position: left;

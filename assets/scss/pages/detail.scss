@@ -7,201 +7,201 @@
 @import "../layouts/footer";
 
 .productDetail {
-    .container {
-        .row {
-            .content_left {
-                padding-left: 57px;
-                @media screen and (max-width: 768px) {
-                    padding-left: 12px;
-                }
-
-                @media screen and (max-width: 576px) {
-                    padding-left: 12px;
-                }
-
-                .card-img {
-                    margin-top: 58px;
-                    width: 334px;
-                    height: 355px;
-                    background: $bg-c3-secondary;
-                    border: 6px solid linear-gradient(
-                            to right, 
-                            #00e6d8 0, 
-                            #c15bff 25%, 
-                            #ff00a6 50%, 
-                            #ff2c1c 75%, 
-                            #ffb800 100%
-                        );
-
-                    img {
-
-                    }
-                }
-            }
-
-            .content_right {
-                padding-right: 57px;
-                @media screen and (max-width: 992px) {
-                    padding-left: 48px;
-                    padding-right: 40px;
-                }
-                @media screen and (max-width: 768px) {
-                    padding-left: 48px;
-                    padding-right: 30px;
-                }
-
-                @media screen and (max-width: 576px) {
-                    padding: 0 75px;
-                }
-
-                
-                h2 {
-                    @extend .text-product-name;
-                    padding-top: 67px;
-                }
-
-                .text {
-                    // width: 503px;
-                    margin-bottom: 0;
-                    @extend .text-lorem;
-                }
-
-                h3 {
-                    @extend .text-available-size;
-
-                    @media screen and (max-width: 576px) {
-                        margin-top: 0.5rem;
-                    }
-                }
-
-                .btn-size {
-                    width: 50px;
-                    height: 50px;
-                    background: $bg-c0-secondary;
-                    border: none;
-                    margin: 0.5rem 1rem 0 0;
-                    @extend .text-choose-size;
-
-                    @media screen and (max-width: 576px) {
-                        margin: 0.5rem 0.75rem 0 0;
-                    }
-                }
-
-                .price {
-                    @extend .text-price-top;
-                    margin-top: 1rem;
-                }
-
-                .btn-add-remove {
-                    width: 50px;
-                    height: 50px;
-                    border: none;
-                    @extend .text-plush-minus;
-                }
-
-                .amount {
-                    @extend .text-amount;
-                    width: 45px;
-                    margin: 0 10px;
-                    padding: 3px 0;
-                    background: $bg-c1-secondary;
-                }
-
-                .btn-add-to-cart {
-                    display: block;
-                    width: 175px;
-                    height: 64px;
-                    line-height: 64px;
-                    text-align: center;
-                    @extend .text-add-to-card;
-                    margin-top: 0.75rem;
-                }
-            }
+  .container {
+    .row {
+      .content_left {
+        padding-left: 57px;
+        @media screen and (max-width: 768px) {
+          padding-left: 12px;
         }
-    }
-}
 
+        @media screen and (max-width: 576px) {
+          padding-left: 12px;
+        }
+
+        .card-img {
+          margin-top: 58px;
+          width: 334px;
+          height: 355px;
+          background: $bg-c3-secondary;
+          border: 6px solid
+            linear-gradient(
+              to right,
+              #00e6d8 0,
+              #c15bff 25%,
+              #ff00a6 50%,
+              #ff2c1c 75%,
+              #ffb800 100%
+            );
+
+          img {
+          }
+        }
+      }
+
+      .content_right {
+        padding-right: 57px;
+        @media screen and (max-width: 992px) {
+          padding-left: 48px;
+          padding-right: 40px;
+        }
+        @media screen and (max-width: 768px) {
+          padding-left: 48px;
+          padding-right: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+          padding: 0 75px;
+        }
+
+        h2 {
+          @extend .text-product-name;
+          padding-top: 67px;
+        }
+
+        .text {
+          // width: 503px;
+          margin-bottom: 0;
+          @extend .text-lorem;
+        }
+
+        h3 {
+          @extend .text-available-size;
+
+          @media screen and (max-width: 576px) {
+            margin-top: 0.5rem;
+          }
+        }
+
+        .btn-size {
+          width: 50px;
+          height: 50px;
+          background: $bg-c0-secondary;
+          border: none;
+          margin: 0.5rem 1rem 0 0;
+          @extend .text-choose-size;
+
+          @media screen and (max-width: 576px) {
+            margin: 0.5rem 0.75rem 0 0;
+          }
+        }
+
+        .price {
+          @extend .text-price-top;
+          margin-top: 1rem;
+        }
+
+        .btn-add-remove {
+          width: 50px;
+          height: 50px;
+          border: none;
+          @extend .text-plush-minus;
+        }
+
+        .amount {
+          @extend .text-amount;
+          width: 45px;
+          margin: 0 10px;
+          padding: 3px 0;
+          background: $bg-c1-secondary;
+        }
+
+        .btn-add-to-cart {
+          display: block;
+          width: 175px;
+          height: 64px;
+          line-height: 64px;
+          text-align: center;
+          @extend .text-add-to-card;
+          margin-top: 0.75rem;
+        }
+      }
+    }
+  }
+}
 
 .realateProduct {
-    background: $bg-c2-secondary;
+  background: $bg-c2-secondary;
 
-    .container {
-        .title {
-            h2 {
-                @extend .text-realate-product;
-                margin: 1rem 0 5.5rem 0;
+  .container {
+    .title {
+      h2 {
+        @extend .text-realate-product;
+        margin: 1rem 0 5.5rem 0;
 
-                @media screen and (max-width: 768px) {
-                    margin: 1rem 0 4rem 0;
-                }
-
-                @media screen and (max-width: 576px) {
-                    margin: 1rem 0 3rem 0;
-                }
-            }
+        @media screen and (max-width: 768px) {
+          margin: 1rem 0 4rem 0;
         }
 
-        .list-item {
-
-            .col-4 {
-                width: 334px;
-                box-sizing: border-box;
-
-                .card {
-                    background: $bg-c3-secondary;
-                    overflow: hidden;
-
-                    img {
-                        width: 100%;
-                        margin: 0;
-                    }
-
-                    .card-body {
-                        .name-product {
-                            @extend .text-name-product;
-                        }
-
-                        .description {
-                            @extend .text-short-descript;
-                        }
-
-                        .d-flex {
-                            button {
-                                width: 60%;
-                                padding: 1rem 0;
-                                @extend .text-buy-now;
-                                border: none;
-                                background: $bg-c3-danger;
-
-                                &:hover{
-                                    color: red;
-                                }
-                            }
-
-                            .price {
-                                width: 40%;
-                                padding: 1rem 0;
-                                margin-bottom: 0;
-                                @extend .text-price-bottom;
-                                background: $bg-c1-secondary;
-
-                                p {}
-                            }
-                        }
-                    }
-                }
-            }
+        @media screen and (max-width: 576px) {
+          margin: 1rem 0 3rem 0;
         }
+      }
     }
+
+    .list-item {
+      .col-4 {
+        width: 334px;
+        box-sizing: border-box;
+
+        .card {
+          background: $bg-c3-secondary;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            margin: 0;
+          }
+
+          .card-body {
+            .name-product {
+              @extend .text-name-product;
+            }
+
+            .description {
+              @extend .text-short-descript;
+            }
+
+            .d-flex {
+              button {
+                width: 60%;
+                padding: 1rem 0;
+                @extend .text-buy-now;
+                border: none;
+                background: $bg-c3-danger;
+
+                &:hover {
+                  color: red;
+                }
+              }
+
+              .price {
+                width: 40%;
+                padding: 1rem 0;
+                margin-bottom: 0;
+                @extend .text-price-bottom;
+                background: $bg-c1-secondary;
+
+                p {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-
-
-
-
 // Hover text gradient
-@keyframes rainbow { 
-    0%{background-position:left}
-    50%{background-position:right}
-    100%{background-position:left}
+@keyframes rainbow {
+  0% {
+    background-position: left;
   }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
