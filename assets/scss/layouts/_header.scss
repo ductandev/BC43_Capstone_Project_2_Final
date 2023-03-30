@@ -1,19 +1,37 @@
-header {
-  background: #000;
-  .list-flex {
-    a {
-    }
-    .img {
-    }
-    .login {
-      img {
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: $bg-c0-dark;
+  height: 60px;
+
+  .container {
+      .header_left {
+          .logo {
+              img {}
+          }
       }
-      a {
-        color: $bg-primary-c1;
-        &:hover {
-          color: plum;
-        }
+
+      .header_right {
+          a{
+              &:hover{
+                  color:$text-c0-violet;
+              }
+          }
+          .charge {
+              text-decoration: none;
+
+              img {}
+          }
+
+          .login {
+              @extend .text-header;
+          }
+
+          .register {
+              @extend .text-header;
+          }
+
       }
-    }
   }
 }

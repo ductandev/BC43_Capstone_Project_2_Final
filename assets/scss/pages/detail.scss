@@ -2,99 +2,12 @@
 @import "../components/component.scss";
 @import "../themes/variable";
 
-
-.header {
-    background-color: $bg-c0-dark;
-    height: 50px;
-
-    .container {
-        .header_left {
-            .logo {
-                img {}
-            }
-        }
-
-        .header_right {
-            a{
-                @extend .hover-gradient;
-                &:hover{
-                    color:rgba(0,0,0,0);
-                }
-            }
-            .charge {
-                text-decoration: none;
-
-                img {}
-            }
-
-            .login {
-                @extend .text-header;
-            }
-
-            .register {
-                @extend .text-header;
-            }
-
-        }
-    }
-}
-
-.menu {
-    background: $bg-c0-light;
-    // height: 50px;
-
-    .container {
-        @media screen and (max-width: 576px) {
-            // background: $bg-c0-secondary !important;
-            background: #F8F8F8 !important;
-        }
-
-        .navbar {
-            button {
-                span {}
-            }
-
-            .navbar-collapse {
-                .navbar-nav {
-                    .active {
-                    }
-
-                    a {
-                        @extend .text-menu;
-                        margin-right: 5px;
-
-                        @extend .hover-gradient;
-                        &:hover{
-                            color:rgba(0,0,0,0);
-                        }
-
-                        &::after{
-                            content: "";
-                            margin-top: 5px;
-                            width: 0%;
-                            height: 2px;
-                            background: linear-gradient(270deg, $bg-c1-primary 5.14%, $bg-c0-violet 89.71%);
-                            display: block;
-                            transition: all 0.5s;
-                        }
-                        &:hover::after{
-                            width: 100%;
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-
-}
-
+@import "../layouts/header";
+@import "../layouts/menu";
+@import "../layouts/footer";
 
 .productDetail {
     .container {
-        // width: 1280px;
-        // height: 530px;
-
         .row {
             .content_left {
                 padding-left: 57px;
@@ -111,9 +24,17 @@
                     width: 334px;
                     height: 355px;
                     background: $bg-c3-secondary;
+                    border: 6px solid linear-gradient(
+                            to right, 
+                            #00e6d8 0, 
+                            #c15bff 25%, 
+                            #ff00a6 50%, 
+                            #ff2c1c 75%, 
+                            #ffb800 100%
+                        );
 
                     img {
-                        // padding: 109px 0 0 57px;
+
                     }
                 }
             }
@@ -275,123 +196,7 @@
 }
 
 
-.footer{
-    .footer_top{
-        background: $bg-c4-secondary;
 
-        .container{
-            // padding-left: 150px;
-            .item{
-                .title{
-                    h3{
-                        @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
-                    }
-                    a{
-                        display: block;
-                        text-decoration: none;
-                        @extend .text-lorem ;
-                        font-size: 13px;
-                        p{
-                            display: inline-block;
-                            margin-bottom: 0.5rem;
-                            @extend .hover-gradient;
-                            &:hover{
-                                color:rgba(0,0,0,0);
-                            }
-                        }
-                    }
-
-                }
-                .title1,.title2{
-                    border-right: 1px solid $bg-c0-secondary;
-                }
-                .title3{
-                    a:last-of-type{
-                        color: $text-c0-danger;
-                    }
-                }
-            }
-        }
-    }
-    
-    .footer_bottom{
-        background: $bg-c5-secondary;
-
-        .container{
-            // padding-left: 100px;
-            .item{
-                .title{
-                    h3{
-                        @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
-                    }
-                    a{
-                        display: block;
-                        text-decoration: none;
-                        @extend .text-lorem ;
-                        font-size: 13px;
-
-                        p{
-                            display: inline-block;
-                            margin-bottom: 0.5rem;
-                            @extend .hover-gradient;
-                            &:hover{
-                                color:rgba(0,0,0,0);
-                            }
-                        }
-                    }
-                    a:last-of-type{
-                        color: $text-c0-danger;
-                    }
-                }
-                .title1,.title2{
-                    border-right: 1px solid $bg-c0-secondary;
-                }
-            }
-        }
-    }
-}
-
-
-/* Back To Top */
-.backToTop{
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    visibility: hidden;
-    opacity: 0;
-
-    @media screen and (max-width: 768px) {
-        right: 10px;
-        bottom: 20px;
-    }
-
-}
-
-/* back-to-top button visible */
-.cd-top--is-visible { 
-    visibility: visible;    // can not tab
-    opacity: 1;
-
-}
-
-
-.backToTop i{
-    color: $bg-c0-violet;
-    border: 3px solid $bg-c0-violet;
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-    text-align: center;
-    line-height: 60px;
-    border-radius: 50%;
-
-
-    @media screen and (max-width: 768px) {
-        width: 45px;
-        height: 45px;
-        line-height: 40px;
-    }
-}
 
 
 // Hover text gradient
