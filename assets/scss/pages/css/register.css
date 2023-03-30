@@ -226,20 +226,8 @@ a {
   background: linear-gradient(60deg, #e03189, #270418, #ef4e7b, #a166ab, #662eb5, #b451e5, #b13dc1, #6fba82);
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
-  -webkit-animation: animatedgradient 3s ease alternate infinite;
-          animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
-}
-@-webkit-keyframes animatedgradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 @keyframes animatedgradient {
   0% {

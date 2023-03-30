@@ -10,7 +10,7 @@ function renderTableProductDetail(arrProductsDetail){
         <div class="container">
             <div class="row">
                 <div class="content_left col-md-12 col-lg-5">
-                    <div class="card-img mx-auto rounded">
+                    <div class="card-img mx-auto rounded-4">
                         <img src="${arrProductsDetail.image}" alt="" class='w-100'>
                     </div>
                 </div>

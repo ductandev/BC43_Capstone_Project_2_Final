@@ -1,43 +1,75 @@
-.footer {
-  .container-fluid {
-    .row {
-      .top {
-        .container {
-          .list-item {
-            .item {
-              border-right: 2px solid #1c6ea4;
-              h3 {
-                font-size: $fs-2xl;
-                font-weight: $fw-bold;
+.footer{
+  .footer_top{
+      background: $bg-c4-secondary;
+
+      .container{
+          // padding-left: 150px;
+          .item{
+              .title{
+                  h3{
+                      @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
+                  }
+                  a{
+                      display: block;
+                      text-decoration: none;
+                      @extend .text-lorem ;
+                      font-size: 13px;
+                      p{
+                          display: inline-block;
+                          margin-bottom: 0.5rem;
+                          @extend .hover-gradient;
+                          &:hover{
+                              color:rgba(0,0,0,0);
+                          }
+                      }
+                  }
+
               }
-              a {
-                p {
-                  font-size: $fs-base;
-                }
+              .title1,.title2{
+                  border-right: 1px solid $bg-c0-secondary;
               }
-            }
+              .title3{
+                  a:last-of-type{
+                      color: $text-c0-danger;
+                  }
+              }
           }
-        }
       }
-      .bot {
-        background-color: $bg-footer-bot;
-        .container {
-          .list-item {
-            .item {
-              border-right: 2px solid #1c6ea4;
-              h3 {
-                font-size: $fs-2xl;
-                font-weight: $fw-bold;
+  }
+  
+  .footer_bottom{
+      background: $bg-c5-secondary;
+
+      .container{
+          // padding-left: 100px;
+          .item{
+              .title{
+                  h3{
+                      @include text($fw-semibold, $fs-xl, $lh-md, $text-c1-dark);
+                  }
+                  a{
+                      display: block;
+                      text-decoration: none;
+                      @extend .text-lorem ;
+                      font-size: 13px;
+
+                      p{
+                          display: inline-block;
+                          margin-bottom: 0.5rem;
+                          @extend .hover-gradient;
+                          &:hover{
+                              color:rgba(0,0,0,0);
+                          }
+                      }
+                  }
+                  a:last-of-type{
+                      color: $text-c0-danger;
+                  }
               }
-              a {
-                p {
-                  font-size: $fs-base;
-                }
+              .title1,.title2{
+                  border-right: 1px solid $bg-c0-secondary;
               }
-            }
           }
-        }
       }
-    }
   }
 }
