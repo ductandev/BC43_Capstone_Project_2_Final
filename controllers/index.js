@@ -1,8 +1,8 @@
 function renderTableItem(arrProduct) {
-  var htmlString = "";
-  for (var index = 0; index < arrProduct.length; index++) {
-    var item = arrProduct[index];
-    htmlString += `
+    var htmlString = "";
+    for (var index = 0; index < arrProduct.length; index++) {
+        var item = arrProduct[index];
+        htmlString += `
                 <div class=" col-6 col-xl-3 col-lg-4 col-sm-6  ">
                 <div class="docute ">
               <div class="product-top ">
@@ -16,13 +16,13 @@ function renderTableItem(arrProduct) {
                 </div>
               </div>
             </div>`;
-  }
-  document.getElementById("item").innerHTML = htmlString;
-  return htmlString;
+    }
+    document.getElementById("item").innerHTML = htmlString;
+    return htmlString;
 }
 
 function renderTableCarousel(carousel) {
-  htmlString = `
+    htmlString = `
       <div class="detail my-auto">
                     <h1>${carousel.name}</h1>
                     <p>${carousel.shortDescription}</p>
@@ -40,30 +40,30 @@ function renderTableCarousel(carousel) {
                     </div>
                   </div>`;
 
-  document.getElementById("carousel").innerHTML = htmlString;
+    document.getElementById("carousel").innerHTML = htmlString;
 }
 function getData() {
-  var promise = axios({
-    url: "https://shop.cyberlearn.vn/api/Product",
-    method: "GET",
-    responseType: "json",
-  });
-  promise.then(function (res) {
-    console.log(res.data.content);
+    var promise = axios({
+        url: "https://shop.cyberlearn.vn/api/Product",
+        method: "GET",
+        responseType: "json",
+    });
+    promise.then(function (res) {
+        console.log(res.data.content);
 
-    renderTableItem(res.data.content);
-  });
+        renderTableItem(res.data.content);
+    });
 }
 
 function getDataCarousel() {
-  var promise = axios({
-    url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=1",
-    method: "GET",
-    responseType: "json",
-  });
-  promise.then(function (res) {
-    renderTableCarousel(res.data.content);
-  });
+    var promise = axios({
+        url: "https://shop.cyberlearn.vn/api/Product/getbyid?id=1",
+        method: "GET",
+        responseType: "json",
+    });
+    promise.then(function (res) {
+        renderTableCarousel(res.data.content);
+    });
 }
 
 getData();
