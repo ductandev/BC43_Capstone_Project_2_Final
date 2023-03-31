@@ -55,17 +55,16 @@
                 padding-right: 57px;
 
                 @media screen and (max-width: 992px) {
-                    padding-left: 48px;
-                    padding-right: 40px;
+                    padding: 0 100px;
                 }
 
                 @media screen and (max-width: 768px) {
-                    padding-left: 48px;
+                    padding-left: 40px;
                     padding-right: 30px;
                 }
 
                 @media screen and (max-width: 576px) {
-                    padding: 0 75px;
+                    padding: 0 70px;
                 }
 
 

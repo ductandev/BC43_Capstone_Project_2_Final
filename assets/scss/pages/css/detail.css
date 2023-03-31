@@ -177,7 +177,7 @@ body {
   text-decoration: none;
 }
 .menu {
-  padding-top: 50px;
+  padding-top: 60px;
   background: #fff;
 }
 @media screen and (max-width: 576px) {
@@ -299,19 +299,18 @@ body {
 }
 @media screen and (max-width: 992px) {
   .productDetail .container .row .content_right {
-    padding-left: 48px;
-    padding-right: 40px;
+    padding: 0 100px;
   }
 }
 @media screen and (max-width: 768px) {
   .productDetail .container .row .content_right {
-    padding-left: 48px;
+    padding-left: 40px;
     padding-right: 30px;
   }
 }
 @media screen and (max-width: 576px) {
   .productDetail .container .row .content_right {
-    padding: 0 75px;
+    padding: 0 70px;
   }
 }
 .productDetail .container .row .content_right h2 {
