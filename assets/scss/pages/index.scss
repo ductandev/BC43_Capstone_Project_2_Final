@@ -78,32 +78,42 @@ a {
       position: absolute;
       top: 0;
       left: 0;
+      box-sizing: border-box;
 
       @media screen and (max-width: 578px) {
-        width: 110%;
-        height: 120%;
+        width: 120%;
+        height: 110%;
       }
       video {
         position: relative;
         max-width: 100%;
         height: auto;
+        object-fit: contain;
+        overflow-clip-margin: content-box;
+        overflow: clip;
       }
     }
     .carousel-item {
       top: 30%;
       left: 10%;
-      @media screen and (max-width: 721px) {
+      @media screen and (max-width: 785px) {
+        top: 10%;
+        left: 8%;
+      }
+      @media screen and (max-width: 576px) {
         top: 0;
-        left: 10%;
+        left: 8%;
       }
       position: absolute;
       color: #f1f1f1;
       background-size: cover;
       .item-detail {
+        top: 10%;
         display: flex;
         flex-wrap: wrap;
         .detail {
-          width: 40%;
+          width: 45%;
+          top: 20%;
           font-family: Inter;
           line-height: 48px;
           line-height: 100%;
@@ -112,15 +122,18 @@ a {
             font-size: $fs-4xl;
             color: $text-dark-c0;
             font-weight: $fw-semibold;
+            @media screen and (max-width: 785px) {
+              font-size: 35px;
+            }
           }
-          p {
+          b {
             font-size: $fs-base;
             color: $text-dark-c0;
           }
           .Buying {
             button {
               display: block;
-              margin-top: 8px;
+              margin-top: 10px;
               @include buttonstyle(
                 $text-dark-c0,
                 $text-light,

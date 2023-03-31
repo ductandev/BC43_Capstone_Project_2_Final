@@ -154,7 +154,8 @@ body {
 .hover-gradient, .footer .footer_bottom .container .item .title a p, .footer .footer_top .container .item .title a p, .menu .container .navbar .navbar-collapse .navbar-nav a {
   background: linear-gradient(to right, #00e6d8, #9425f3, #5136f9);
   background-size: 300% 300%;
-  animation: rainbow 2s ease-in-out infinite;
+  -webkit-animation: rainbow 2s ease-in-out infinite;
+          animation: rainbow 2s ease-in-out infinite;
   -webkit-background-clip: text;
           background-clip: text;
   transition: color 0.2s ease-in-out;
@@ -410,6 +411,17 @@ body {
   padding: 1rem 0;
   margin-bottom: 0;
   background: #DEDDDC;
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 @keyframes rainbow {
   0% {

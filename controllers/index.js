@@ -25,18 +25,14 @@ function renderTableCarousel(carousel) {
   htmlString = `
       <div class="detail my-auto">
                     <h1>${carousel.name}</h1>
-                    <p>${carousel.shortDescription}</p>
+                    <b>${carousel.shortDescription}</b>
                     <div class="Buying">
                       <button class="btn-man">
                         <a href="./detail.html?id=${carousel.id}" title="Buy for Man"
-                          >Buy For Man <i class="fa-solid fa-arrow-right"></i
+                          >Buy Now <i class="fa-solid fa-arrow-right"></i
                         ></a>
                       </button>
-                      <button class="btn-man">
-                        <a href="./detail.html?id=${carousel.id}"  title="Buy for Woman"
-                          >Buy For Woman <i class="fa-solid fa-arrow-right"></i
-                        ></a>
-                      </button>
+                      
                     </div>
                   </div>`;
 
