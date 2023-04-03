@@ -28,11 +28,21 @@ function checkEmailError(input) {
   if (regexEmail.test(input.value)) {
     showSuccess(input);
   } else {
-    showError(input, "Email Invalid");
+    showError(input, "Email không hợp lệ");
   }
   return isEmailError;
 }
-
+function checkName(input) {
+  const regexName = /\p{Letter}/u;
+  input.value = input.value.trim();
+  let isNameError = !regexName.test(input.value);
+  if (regexName.test(input.value)) {
+    showSuccess(input);
+  } else {
+    showError(input, "Chỉ được nhập chữ");
+  }
+  return isNameError;
+}
 function checkPassword(input) {
   const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
   input.value = input.value.trim();
@@ -42,7 +52,7 @@ function checkPassword(input) {
   } else {
     showError(
       input,
-      " Mật khẩu bao gồm ít nhất một số và bao gồm cả chữ thường và chữ in hoa và ký tự đặc biệt"
+      " Mật khẩu bao gồm ít nhất một số và bao gồm cả chữ thường và chữ in hoa "
     );
   }
   return isPasswordError;
@@ -79,7 +89,7 @@ function checkPhoneError(input) {
   if (regexPhone.test(input.value)) {
     showSuccess(input);
   } else {
-    showError(input, "Phone Invalid");
+    showError(input, "Số điện thoại không hợp lệ");
   }
   return isPhoneError;
 }
@@ -88,19 +98,23 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   let isEmailError = checkEmailError(email);
-  let isPasswordLengthError = checkLengthError(password, 6, 12);
+  let isNameError = checkName(username);
+  let isCheckPhoneError = checkPhoneError(phone);
   let isPasswordError = checkPassword(password);
+  let isPasswordLengthError = checkLengthError(password, 6, 12);
   let isCheckMathError = checkMathchPasswordError(password, confirmPassword);
   let isNameLengthError = checkLengthError(username, 3, 30);
-  let isCheckPhoneError = checkPhoneError(phone);
+  let isPhoneLengthError = checkLengthError(phone, 0, 10);
 
   if (
     isEmailError ||
-    isNameLengthError ||
-    isPasswordLengthError ||
+    isNameError ||
+    isCheckPhoneError ||
     isPasswordError ||
-    isCheckMathError ||
-    isCheckPhoneError
+    isPasswordLengthError ||
+    isNameLengthError ||
+    isPhoneLengthError ||
+    isCheckMathError
   ) {
   } else {
     document.querySelector("#btnClick").onclick = function () {
